@@ -1,3 +1,7 @@
+// git-forge entry note: this file is the make.fun kit's lifecycle skeleton, kept as-is on
+// purpose. The scored work lives in app.ts and the modules it builds; this file only binds
+// an ephemeral port, registers it with the trial env, and waits for the env to say done.
+//
 // The entry <-> env lifecycle, as env/src/wire.ts settles it: bind an ephemeral port, tell the env the
 // port it bound, then poll until the env says the trial is over and exit 0. Keep this file as it is:
 // the suite scores the server app.ts builds, and the lifecycle is the harness's, not the contest's.
